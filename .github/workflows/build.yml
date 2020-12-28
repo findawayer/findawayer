@@ -1,0 +1,38 @@
+name: README build
+
+on:
+  push:
+    # Map matching patterns against `refs/head`
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout this repo (https://github.com/actions/checkout)
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install node (https://github.com/actions/setup-node)
+      - name: Setup node
+        uses: actions/setup-node@v2
+        # Latest major node version as of moment of authoring :)
+        with:
+          node-version: '14'
+      # Cache dependencies (https://github.com/actions/cache)
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-pkg-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        run: npm install
+      - name: Generate README
+        run: npm run-script build
+        # env:
+          # TEST: ${{ secrets.TEST }}
+      - name: Push README
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'

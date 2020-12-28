@@ -1,3 +1,9 @@
+mixin badge(data)
+  img(
+    alt=data.name
+    src=`https://img.shields.io/badge/-${data.name}-${data.color.slice(1)}?style=flat-square&logo=${data.icon || data.name.toLowerCase()}&logoColor=white`
+  )
+
 h1 Howdy, freinds 🙌
 
 p
@@ -33,11 +39,5 @@ h2 I code with
 
 p
   each tool in tools
-    span(style=`display: inline-block; padding: 1em; background: ${tool.color};`)
-      img(
-        alt=tool.name
-        src=`https://simpleicons.org/icons/${tool.icon || tool.name.toLowerCase().replace(/ /g, '-')}.svg`
-        width="24"
-        style="vertical-align: top;"
-      )
+    +badge(tool)
     | &nbsp;
