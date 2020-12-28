@@ -4,7 +4,8 @@
   "description": "Dynamic GitHub profile using Actions and JavaScript.",
   "main": "src/index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "dev": "node-dev --respawn index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
   "dependencies": {
     "pretty": "^2.0.0",
     "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "node-dev": "^6.2.0"
   }
 }

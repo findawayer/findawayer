@@ -20,7 +20,7 @@ const variables = {
     { name: 'Redux', color: '#764ABC' },
     { name: 'GraphQL', color: '#E10098' },
     { name: 'Apollo', color: '#311C87', icon: 'apollo-graphql' },
-    { name: 'Nodejs', color: '#339933' },
+    { name: 'Node.js', color: '#339933' },
     { name: 'Styled Components', color: '#DB7092' },
     { name: 'npm', color: '#CB3837' },
     { name: 'html5', color: '#E34F26' },
@@ -34,7 +34,6 @@ const variables = {
     { name: 'Next.js', color: '#000000' },
     { name: 'Material UI', color: '#0081CB' },
     { name: 'Visual Studio Code', color: '#007ACC' },
-    { name: 'Google Chrome', color: '#4285F4' },
   ],
 };
 
