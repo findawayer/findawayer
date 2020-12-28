@@ -1,0 +1,29 @@
+{
+  "name": "findawayer",
+  "version": "1.0.0",
+  "description": "Dynamic GitHub profile using Actions and JavaScript.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findawayer/findawayer.git"
+  },
+  "keywords": [
+    "github",
+    "readme.md",
+    "actions",
+    "javascript"
+  ],
+  "author": "Tae Sung, Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/findawayer/findawayer/issues"
+  },
+  "homepage": "https://github.com/findawayer/findawayer#readme",
+  "dependencies": {
+    "pretty": "^2.0.0",
+    "pug": "^3.0.0"
+  }
+}
