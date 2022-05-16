@@ -1,6 +1,6 @@
 <h1>Howdy, friends 🙌</h1>
 <p>I'm Tae-Sung, JavaScript developer from <img src="./assets/south-korea.svg" width="14" style="vertical-align: middle;" /> Korea.</p>
-<p>Currently in between jobs, creating tiny things for my portfolio. You are my future work partner? Welcome, you found the right corner!</p>
+<p>You are my future work partner? Welcome, you found the right corner!</p>
 </p>
 <h2>Top projects</h2>
 <table>
